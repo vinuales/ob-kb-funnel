@@ -72,7 +72,6 @@ module.controller('FunnelController', function($scope, Private) {
     }
     $scope.processData = function(rows, params) {
         console.log("Data params: ", params);
-	console.log("Data rows: ", rows);
         if (!params || !rows || !rows.length) {
             return rows;
         }

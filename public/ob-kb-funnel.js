@@ -11,12 +11,8 @@ VisTypesRegistryProvider.register(FunnelProvider);
 
 // The provider function, which must return our new visualization type
 function FunnelProvider(Private) {
-	console.log("Dentro de FunnelProvider.");
-	console.log("TemplateVisType...");
 	const TemplateVisType = Private(TemplateVisTypeProvider);
-	console.log("Schemas...");
 	const Schemas = Private(VisSchemasProvider);
-	console.log("return TVT...");
 	// Describe our visualization
 	return new TemplateVisType({
 		name: 'obFunnel', // The internal id of the visualization (must be unique)
